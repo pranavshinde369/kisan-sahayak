@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kisaan Signal</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS (CDN for demo) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'ks-bg': '#0f1a0f',
+              'ks-panel': '#152015',
+              'ks-card': '#1a2d1a',
+              'ks-border': '#2d4a2d',
+              'ks-primary': '#66bb6a',
+              'ks-text-main': '#e8f5e9',
+              'ks-text-muted': '#7a9e7a',
+              'ks-warning': '#ff9800',
+              'ks-danger': '#f44336'
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background-color: #0f1a0f;
+        color: #e8f5e9;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
